@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Progress from "./Progress";
 
 const ProgressBar = () => {
   const [progressState, setProgressState] = useState(0);
+  const [downloading, setDownloading] = useState(0);
 
   const changeProgress = (val: number) => {
     setProgressState((prev) => {
@@ -10,6 +11,21 @@ const ProgressBar = () => {
       return Math.min(100, Math.max(0, next));
     });
   };
+
+  // auto increase progress
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setDownloading((p) => {
+        if (p >= 100) {
+          clearInterval(timerId);
+          return 100;
+        }
+        return p+10
+      });
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, []);
 
   return (
     <div className="flex flex-col gap-2 items-center justify-center">
@@ -33,6 +49,8 @@ const ProgressBar = () => {
           +10%
         </button>
       </div>
+
+      <Progress progressState={downloading} />
     </div>
   );
 };
