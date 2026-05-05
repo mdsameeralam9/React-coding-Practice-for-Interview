@@ -1,9 +1,10 @@
 // Day 1 - import Layout from './RickAndMortyCharacters/Layout'
-import StickyNotesLayout from './StickyNotes/Layout'
+// Day 2 - import StickyNotesLayout from './StickyNotes/Layout'
+import ProgressBar from './Progressbar'
 
 const App = () => {
   return (
-    <StickyNotesLayout />
+    <ProgressBar />
   )
 }
 
