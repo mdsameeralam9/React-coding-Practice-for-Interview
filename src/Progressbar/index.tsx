@@ -4,6 +4,7 @@ import Progress from "./Progress";
 const ProgressBar = () => {
   const [progressState, setProgressState] = useState(0);
   const [downloading, setDownloading] = useState(0);
+  const [realProgress, setRealProgress] = useState(0);
 
   const changeProgress = (val: number) => {
     setProgressState((prev) => {
@@ -20,9 +21,34 @@ const ProgressBar = () => {
           clearInterval(timerId);
           return 100;
         }
-        return p+10
+        return p + 10;
       });
     }, 1000);
+
+    return () => clearInterval(timerId);
+  }, []);
+
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setRealProgress((p) => {
+        if (p >= 100) {
+          clearInterval(timerId);
+          return 100;
+        }
+
+        let increment;
+
+        if (p < 50)
+          increment = 10; // fast
+        else if (p < 80)
+          increment = 5; // medium
+        else if (p < 95)
+          increment = 2; // slow
+        else increment = 0.5; // very slow
+
+        return Math.min(p + increment, 100);
+      });
+    }, 500); // faster updates feel smoother
 
     return () => clearInterval(timerId);
   }, []);
@@ -51,6 +77,7 @@ const ProgressBar = () => {
       </div>
 
       <Progress progressState={downloading} />
+      <Progress progressState={realProgress} />
     </div>
   );
 };
