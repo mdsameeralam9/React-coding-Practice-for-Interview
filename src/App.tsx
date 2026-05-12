@@ -9,8 +9,7 @@
 // Day 6 -  import LeapYearChecker from './LeapYear/Layout'
 // Day 7 - import FileExplorerLayout from './FileExplorer/FileExplorerLayout'
 // Day 8 - import OTPLayout from "./OTP/OTPLayout"
-
-import DragAndDropLayout from "./DragAndDrop/DragAndDropLayout"
+// Day 8 - import DragAndDropLayout from "./DragAndDrop/DragAndDropLayout"
 
 
 const App = () => {
