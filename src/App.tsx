@@ -11,10 +11,12 @@
 // Day 8 - import OTPLayout from "./OTP/OTPLayout"
 // Day 8 - import DragAndDropLayout from "./DragAndDrop/DragAndDropLayout"
 
+import MemoryGameLayout from "./MemoryGame/MemoryGameLayout"
+
 
 const App = () => {
   return (
-    <DragAndDropLayout />
+    <MemoryGameLayout />
   )
 }
 
