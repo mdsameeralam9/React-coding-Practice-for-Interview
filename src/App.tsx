@@ -7,13 +7,19 @@
 // Day 5 -import ConfirmModalLayout from './ConfirmModal/ConfirmModalLayout'
 // Day 5 - import FileExplorerLayout from './FileExplorer/FileExplorerLayout'
 // Day 6 -  import LeapYearChecker from './LeapYear/Layout'
-import FileExplorerLayout from './FileExplorer/FileExplorerLayout'
+// Day 7 - import FileExplorerLayout from './FileExplorer/FileExplorerLayout'
+// Day 8 - import OTPLayout from "./OTP/OTPLayout"
+
+import DragAndDropLayout from "./DragAndDrop/DragAndDropLayout"
 
 
 const App = () => {
   return (
-    <FileExplorerLayout />
+    <DragAndDropLayout />
   )
 }
 
 export default App
+
+
+// OTP, Drag and Drop, Memory game, Functions class,array, Js , Recat, typescript, 
