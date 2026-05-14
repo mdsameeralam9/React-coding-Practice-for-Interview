@@ -10,17 +10,16 @@
 // Day 7 - import FileExplorerLayout from './FileExplorer/FileExplorerLayout'
 // Day 8 - import OTPLayout from "./OTP/OTPLayout"
 // Day 8 - import DragAndDropLayout from "./DragAndDrop/DragAndDropLayout"
-
-import MemoryGameLayout from "./MemoryGame/MemoryGameLayout"
+// Day 9 - import MemoryGameLayout from "./MemoryGame/MemoryGameLayout"
+import NestedCheckBoxLayout from "./NestedCheckBox/NestedCheckBoxLayout"
 
 
 const App = () => {
   return (
-    <MemoryGameLayout />
+    <NestedCheckBoxLayout />
   )
 }
 
 export default App
 
 
-// OTP, Drag and Drop, Memory game, Functions class,array, Js , Recat, typescript, 
