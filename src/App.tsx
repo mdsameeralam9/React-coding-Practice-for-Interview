@@ -11,13 +11,14 @@
 // Day 8 - import OTPLayout from "./OTP/OTPLayout"
 // Day 8 - import DragAndDropLayout from "./DragAndDrop/DragAndDropLayout"
 // Day 9 - import MemoryGameLayout from "./MemoryGame/MemoryGameLayout"
-import FileExplorerLayout from "./FileExplorer/FileExplorerLayout"
+// Day 10 - import FileExplorerLayout from "./FileExplorer/FileExplorerLayout"
+import TooltipLayout from "./Tooltip/TooltipLayout"
 // Day 9  import NestedCheckBoxLayout from "./NestedCheckBox/NestedCheckBoxLayout"
 
 
 const App = () => {
   return (
-    <FileExplorerLayout />
+    <TooltipLayout />
   )
 }
 
