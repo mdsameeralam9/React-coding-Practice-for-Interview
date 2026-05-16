@@ -12,13 +12,15 @@
 // Day 8 - import DragAndDropLayout from "./DragAndDrop/DragAndDropLayout"
 // Day 9 - import MemoryGameLayout from "./MemoryGame/MemoryGameLayout"
 // Day 10 - import FileExplorerLayout from "./FileExplorer/FileExplorerLayout"
-import TooltipLayout from "./Tooltip/TooltipLayout"
+// Day 10 - import TooltipLayout from "./Tooltip/TooltipLayout"
 // Day 9  import NestedCheckBoxLayout from "./NestedCheckBox/NestedCheckBoxLayout"
+
+import PriceRangeLayout from "./PriceRange/PriceRangeLayout"
 
 
 const App = () => {
   return (
-    <TooltipLayout />
+    <PriceRangeLayout />
   )
 }
 

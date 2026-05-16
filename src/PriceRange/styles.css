@@ -1,0 +1,89 @@
+.slider-container {
+  width: 350px;
+  margin: 40px auto;
+  font-family: Arial;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.inputs div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputs input {
+  padding: 5px;
+}
+
+.slider-track {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* Active Range */
+.slider-active-range {
+  position: absolute;
+  height: 100%;
+  background: red;
+  border-radius: 5px;
+}
+
+/* Labels */
+.slider-label {
+  position: absolute;
+  top: 25px;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+/* Range Inputs */
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+  appearance: none;
+  background: none;
+  top: 0;
+}
+
+/* Thumb Style */
+.thumb::-webkit-slider-thumb {
+  pointer-events: auto;
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+  border: none;
+  margin-top: -6px;
+}
+
+.thumb::-moz-range-thumb {
+  pointer-events: auto;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+  border: none;
+}
+
+/* Hide default track */
+.thumb::-webkit-slider-runnable-track {
+  background: transparent;
+}
+
+.thumb::-moz-range-track {
+  background: transparent;
+}
