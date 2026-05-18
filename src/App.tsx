@@ -15,12 +15,13 @@
 // Day 10 - import TooltipLayout from "./Tooltip/TooltipLayout"
 // Day 9  import NestedCheckBoxLayout from "./NestedCheckBox/NestedCheckBoxLayout"
 
-import PriceRangeLayout from "./PriceRange/PriceRangeLayout"
+// Day 11 - import PriceRangeLayout from "./PriceRange/PriceRangeLayout"
+import SkealtonLoadingLayout from "./SkealtonLoading/SkealtonLoadingLayout"
 
 
 const App = () => {
   return (
-    <PriceRangeLayout />
+    <SkealtonLoadingLayout />
   )
 }
 
