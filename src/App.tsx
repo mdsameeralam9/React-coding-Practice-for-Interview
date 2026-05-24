@@ -14,14 +14,17 @@
 // Day 10 - import FileExplorerLayout from "./FileExplorer/FileExplorerLayout"
 // Day 10 - import TooltipLayout from "./Tooltip/TooltipLayout"
 // Day 9  import NestedCheckBoxLayout from "./NestedCheckBox/NestedCheckBoxLayout"
-
 // Day 11 - import PriceRangeLayout from "./PriceRange/PriceRangeLayout"
-import SkealtonLoadingLayout from "./SkealtonLoading/SkealtonLoadingLayout"
+// Day 12 - import SkealtonLoadingLayout from "./SkealtonLoading/SkealtonLoadingLayout"
+// 13 = import StopWatchLayout from "./StopWatch/StopWatchLayout"
+
+import TrafficLightLayout from "./TrafficLight/TrafficLightLayout"
+
 
 
 const App = () => {
   return (
-    <SkealtonLoadingLayout />
+    <TrafficLightLayout />
   )
 }
 
