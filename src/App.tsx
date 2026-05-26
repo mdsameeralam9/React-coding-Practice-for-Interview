@@ -20,14 +20,15 @@
 // Day 14 import ConfigFormLayout from "./ConfigForm/ConfigFormLayout"
 // Day 15 - import SeachableDropdownLayout from "./Seachable/SeachableDropdownLayout"
 // 13 - import TrafficLightLayout from "./TrafficLight/TrafficLightLayout"
+// Day 16 - import InfniteScrollWithHeight from "./Pagination/InfniteScrollWithHeight"
 
-import InfniteScrollWithHeight from "./Pagination/InfniteScrollWithHeight"
+import PaginationWithButton from "./Pagination/PaginationWithButton"
 
 
 
 const App = () => {
   return (
-    <InfniteScrollWithHeight />
+    <PaginationWithButton />
   )
 }
 
