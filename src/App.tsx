@@ -18,14 +18,16 @@
 // Day 12 - import SkealtonLoadingLayout from "./SkealtonLoading/SkealtonLoadingLayout"
 // 13 - import StopWatchLayout from "./StopWatch/StopWatchLayout"
 // Day 14 import ConfigFormLayout from "./ConfigForm/ConfigFormLayout"
-import SeachableDropdownLayout from "./Seachable/SeachableDropdownLayout"
+// Day 15 - import SeachableDropdownLayout from "./Seachable/SeachableDropdownLayout"
 // 13 - import TrafficLightLayout from "./TrafficLight/TrafficLightLayout"
+
+import InfniteScrollWithHeight from "./Pagination/InfniteScrollWithHeight"
 
 
 
 const App = () => {
   return (
-    <SeachableDropdownLayout />
+    <InfniteScrollWithHeight />
   )
 }
 
