@@ -22,14 +22,16 @@
 // 13 - import TrafficLightLayout from "./TrafficLight/TrafficLightLayout"
 // Day 16 - import InfniteScrollWithHeight from "./Pagination/InfniteScrollWithHeight"
 // Day 16 - import PaginationWithButton from "./Pagination/PaginationWithButton"
-import InfniteScrollWithIntersectionObserver from "./Pagination/InfniteScrollWithIntersectionObserver"
+// Day 16  - import InfniteScrollWithIntersectionObserver from "./Pagination/InfniteScrollWithIntersectionObserver"
+
+import GridLightLayout from "./GridLight/GridLightLayout"
 
 
 
 
 const App = () => {
   return (
-    <InfniteScrollWithIntersectionObserver />
+    <GridLightLayout />
   )
 }
 
