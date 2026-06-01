@@ -24,6 +24,7 @@
 // Day 16 - import PaginationWithButton from "./Pagination/PaginationWithButton"
 // Day 16  - import InfniteScrollWithIntersectionObserver from "./Pagination/InfniteScrollWithIntersectionObserver"
 
+import FeedBackForm from "./FeedBack/FeedBackForm"
 import GridLightLayout from "./GridLight/GridLightLayout"
 
 
@@ -31,7 +32,7 @@ import GridLightLayout from "./GridLight/GridLightLayout"
 
 const App = () => {
   return (
-    <GridLightLayout />
+    <FeedBackForm />
   )
 }
 
