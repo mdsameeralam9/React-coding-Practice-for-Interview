@@ -25,15 +25,15 @@
 // Day 16  - import InfniteScrollWithIntersectionObserver from "./Pagination/InfniteScrollWithIntersectionObserver"
 // Day 17 - import FeedBackForm from "./FeedBack/FeedBackForm"
 // Day 17 - import GridLightLayout from "./GridLight/GridLightLayout"
-
-import UserListWithDebounce from "./Debounce_Trottle_AbortControlller/Debounce"
+// Day 18 - import UserListWithDebounce from "./Debounce_Trottle_AbortControlller/Debounce"
+import React_redux_Layout from "./React-Redux/React_redux_Layout"
 
 
 
 
 const App = () => {
   return (
-    <UserListWithDebounce />
+    <React_redux_Layout />
   )
 }
 
