@@ -1,0 +1,51 @@
+0. coding Practice - quick all till now.
+1. Virual DOm. real dom, difference, jsx
+2. reconcilliation - Fiber, reconciller, diffing, how works internally
+3. useState, useReducer, useEffect
+4. useMemo,useCallback, useMemo
+5. useContetxt, createContext
+7. useEffect with api and use - alternatives
+8. Recat inbuilt component
+9. Debug, otimisation, security, aria-label why
+10. all aprrpaoc for perfirmace
+11. web vitals
+12. SEO, Broswer compatability
+13. webpack- bundler- build and all related term
+14. ESLINT, prettier, env, packahe.json, yarn, 
+15. Test react- unit , intergartion, E2e
+
+16. class component and lifecycle methods
+17. Version React - and new Hooks
+
+
+
+
+
+
+# Javascript
+1.Hoisting, let const var, temporal dead zone, Scope, Global, local function
+2. Closure
+3. function, arrow function
+4. Object - class, map set, Object all , this  call apply bind,
+5. async: Timer func, Promise with all methods, async await, callback Hell and solution
+6. Event loop, browser , how js works, web apis
+7. output based questions- []+[], and so on...
+
+
+# DSA
+1. number
+2. string
+3. array
+4. object
+
+# HTML
+1. critical rendering- how Browser works
+2. url
+3. Evebnt bubble, capture , delegation
+
+
+#CSS
+1. postion, z-index
+2. flex, grid
+3. dislay - no=ne-hidden, inline
+4. 

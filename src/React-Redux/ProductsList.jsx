@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { startFetch, stopFetch } from "./Redux/actions/products";
+import { setProductDetail, startFetch, stopFetch } from "./Redux/actions/products";
+import { useNavigate } from "react-router-dom";
 
 const delay = () => new Promise((res, rej) => setTimeout(res, 4000));
 
 const ProductsList = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   const fetchProducts = async () => {
     dispatch(startFetch(true));
@@ -19,7 +21,7 @@ const ProductsList = () => {
 
       const finalData = await resp.json();
       const { products = [] } = finalData ?? {};
-      await delay();
+      // await delay();
       if (products.length > 0) {
         dispatch({
           type: "ADD_PRODUCTS",
@@ -41,6 +43,10 @@ const ProductsList = () => {
     fetchProducts();
   }, []);
 
+  const productDetailScreen = (id, product) => {
+    navigate(`/${id}`, {state: product})
+  }
+
   const state = useSelector((state) => state.products);
   const { loading = false, error = false, productsList = [] } = state ?? {};
   if (loading) return <h1>Loading...</h1>;
@@ -50,6 +56,7 @@ const ProductsList = () => {
     <div className="flex gap-2 justify-center items-center flex-wrap">
       {productsList?.map((product) => (
         <div
+          onClick={() => productDetailScreen(product?.id, product)}
           key={product?.id}
           className="productWrapper w-50 h-75 border rounded flex flex-col gap-2 justify-center items-center"
         >
