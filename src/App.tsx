@@ -29,12 +29,14 @@
 // Day 19 - import React_redux_Layout from "./React-Redux/React_redux_Layout"
 // Day 20 - import OTP from "./PracticeAgain/Oto";
 // Day 20 - import UseReducerHookLayout from "./UseReducerHook/UseReducerHookLayout";
-import DropdownLayout from "./CompanyWise/DropdownDesign";
-// Day 21 - import Layout_UseHook from "./useHook/Layout_UseHook";
+// Day 21 -import DropdownLayout from "./CompanyWise/DropdownDesign";
+// Day 22 - import Layout_UseHook from "./useHook/Layout_UseHook";
+
+import IntermediateCheckBoxLayout from "./NestedCheckBox/IntermediateCheckBox/IntermediateCheckBoxLayout";
 
 
 const App = () => {
-  return <DropdownLayout />;
+  return <IntermediateCheckBoxLayout />;
 };
 
 export default App;
