@@ -32,11 +32,12 @@
 // Day 21 -import DropdownLayout from "./CompanyWise/DropdownDesign";
 // Day 22 - import Layout_UseHook from "./useHook/Layout_UseHook";
 
-import IntermediateCheckBoxLayout from "./NestedCheckBox/IntermediateCheckBox/IntermediateCheckBoxLayout";
+import DynamicGridwithIncrementalValuesLayout from "./DynamicGridwithIncrementalValues/DynamicGridwithIncrementalValuesLayout";
+// Day 22 - import IntermediateCheckBoxLayout from "./NestedCheckBox/IntermediateCheckBox/IntermediateCheckBoxLayout";
 
 
 const App = () => {
-  return <IntermediateCheckBoxLayout />;
+  return <DynamicGridwithIncrementalValuesLayout />;
 };
 
 export default App;
