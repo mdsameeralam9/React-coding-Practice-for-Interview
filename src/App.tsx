@@ -31,13 +31,14 @@
 // Day 20 - import UseReducerHookLayout from "./UseReducerHook/UseReducerHookLayout";
 // Day 21 -import DropdownLayout from "./CompanyWise/DropdownDesign";
 // Day 22 - import Layout_UseHook from "./useHook/Layout_UseHook";
-
-import DynamicGridwithIncrementalValuesLayout from "./DynamicGridwithIncrementalValues/DynamicGridwithIncrementalValuesLayout";
+// day 23 - import DynamicGridwithIncrementalValuesLayout from "./DynamicGridwithIncrementalValues/DynamicGridwithIncrementalValuesLayout";
 // Day 22 - import IntermediateCheckBoxLayout from "./NestedCheckBox/IntermediateCheckBox/IntermediateCheckBoxLayout";
+
+import Virtualisation from "./Pagination/Virtualisation";
 
 
 const App = () => {
-  return <DynamicGridwithIncrementalValuesLayout />;
+  return <Virtualisation />;
 };
 
 export default App;
