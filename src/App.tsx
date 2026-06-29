@@ -34,12 +34,13 @@
 // day 23 - import DynamicGridwithIncrementalValuesLayout from "./DynamicGridwithIncrementalValues/DynamicGridwithIncrementalValuesLayout";
 // Day 22 - import IntermediateCheckBoxLayout from "./NestedCheckBox/IntermediateCheckBox/IntermediateCheckBoxLayout";
 // Day 23 -import Virtualisation from "./Pagination/Virtualisation";
+// Day 24 - import SearchWithAPI from "./SearchWithApi/SearchWithAPI";
+import EventManagement from "./EventMangement/EventMangmnt";
 
-import SearchWithAPI from "./SearchWithApi/SearchWithAPI";
 
 
 const App = () => {
-  return <SearchWithAPI />;
+  return <EventManagement />;
 };
 
 export default App;
