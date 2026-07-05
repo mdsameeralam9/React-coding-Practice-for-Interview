@@ -35,12 +35,15 @@
 // Day 22 - import IntermediateCheckBoxLayout from "./NestedCheckBox/IntermediateCheckBox/IntermediateCheckBoxLayout";
 // Day 23 -import Virtualisation from "./Pagination/Virtualisation";
 // Day 24 - import SearchWithAPI from "./SearchWithApi/SearchWithAPI";
-import EventManagement from "./EventMangement/EventMangmnt";
+// Day 25 -import EventManagement from "./EventMangement/EventMangmnt";
+
+import PaginationPage from "./Pagination/PaginationPage";
+// Day 26 - import SequentialProgressBarsLayout from "./SequentialProgressBars/SequentialProgressBarsLayout";
 
 
 
 const App = () => {
-  return <EventManagement />;
+  return <PaginationPage />;
 };
 
 export default App;

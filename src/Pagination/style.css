@@ -1,0 +1,13 @@
+.btn{
+    background: blue;
+    color:white;
+    cursor: pointer;
+    padding: 2px 8px;
+    border: 1px solid;
+}
+
+.Pagination{
+    display: flex;
+    gap:1 rem;
+    margin: 2rem;
+}
