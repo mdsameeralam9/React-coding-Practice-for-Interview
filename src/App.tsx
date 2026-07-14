@@ -37,13 +37,15 @@
 // Day 24 - import SearchWithAPI from "./SearchWithApi/SearchWithAPI";
 // Day 25 -import EventManagement from "./EventMangement/EventMangmnt";
 
-import PaginationPage from "./Pagination/PaginationPage";
+// Day 27 - import PaginationPage from "./Pagination/PaginationPage";
+import ProgressBar3Simutaneous from "./ProgresBar3Simultaneous";
+// Day 28 - import LayoutShopping from "./ShoppingApp/Layout";
 // Day 26 - import SequentialProgressBarsLayout from "./SequentialProgressBars/SequentialProgressBarsLayout";
 
 
 
 const App = () => {
-  return <PaginationPage />;
+  return <ProgressBar3Simutaneous />;
 };
 
 export default App;
