@@ -38,14 +38,15 @@
 // Day 25 -import EventManagement from "./EventMangement/EventMangmnt";
 
 // Day 27 - import PaginationPage from "./Pagination/PaginationPage";
-import ProgressBar3Simutaneous from "./ProgresBar3Simultaneous";
+import ProgressChart from "./ProgreesChart/Layout";
+// 29 - import ProgressBar3Simutaneous from "./ProgresBar3Simultaneous";
 // Day 28 - import LayoutShopping from "./ShoppingApp/Layout";
 // Day 26 - import SequentialProgressBarsLayout from "./SequentialProgressBars/SequentialProgressBarsLayout";
 
 
 
 const App = () => {
-  return <ProgressBar3Simutaneous />;
+  return <ProgressChart />;
 };
 
 export default App;
