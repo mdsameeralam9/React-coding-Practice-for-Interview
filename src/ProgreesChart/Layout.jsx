@@ -24,21 +24,21 @@ const ProgressChart = () => {
 
   useEffect(() => {
     const timerID = setInterval(() => {
-      setProgressState(p => {
-        if(p === 100){
-            clearInterval(timerID);
-            return p
-        };
+      setProgressState((p) => {
+        if (p === 100) {
+          clearInterval(timerID);
+          return p;
+        }
 
-        return Math.min(100, p+10)
-      })
+        return Math.min(100, p + 10);
+      });
     }, 1000);
 
     return () => clearInterval(timerID);
   }, []);
 
   const progress = progressState; // %
-  console.log(progressState)
+  console.log(progressState);
 
   return (
     <div className="wrapper">

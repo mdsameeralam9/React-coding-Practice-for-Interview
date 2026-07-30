@@ -37,8 +37,10 @@
 // Day 24 - import SearchWithAPI from "./SearchWithApi/SearchWithAPI";
 // Day 25 -import EventManagement from "./EventMangement/EventMangmnt";
 
+import ApiCallWithTimeOut from "./ApiCallApproach/ApiCallWithTimeOut";
+
 // Day 27 - import PaginationPage from "./Pagination/PaginationPage";
-import ProgressChart from "./ProgreesChart/Layout";
+// 30 -import ProgressChart from "./ProgreesChart/Layout";
 // 29 - import ProgressBar3Simutaneous from "./ProgresBar3Simultaneous";
 // Day 28 - import LayoutShopping from "./ShoppingApp/Layout";
 // Day 26 - import SequentialProgressBarsLayout from "./SequentialProgressBars/SequentialProgressBarsLayout";
@@ -46,7 +48,7 @@ import ProgressChart from "./ProgreesChart/Layout";
 
 
 const App = () => {
-  return <ProgressChart />;
+  return <ApiCallWithTimeOut />;
 };
 
 export default App;
