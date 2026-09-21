@@ -1,0 +1,32 @@
+# High Level
+1. File and Folder explorer
+2. Nested Checkbox with and without indeterminate
+3. Virtualisation(postion with absolute, transition and tranlate Y)
+
+
+# Medium  Level
+1. Memory Game
+2. Pagination - Infnite Scroll with (Intersection Observer, Heigt, Button)
+3. OTP component
+4. Progress with contol with button.
+5. Debouce and Trottle - Search Fuctionalit(normal, with APi)
+6. Drag and Drop with todo list
+
+
+
+# Low Level
+1. Soduko Game
+2. Traffic Light
+3. Form - (Image with api and normal)
+4. Progress till 100%
+5. Timer with Stop and resume functionality
+6. Modal , select with option
+
+
+# State mangament 
+1. Redux , toolkit,  context
+2. fetch, axios, react-query, api with redux toolkit,
+3. useState, useReducer, useMemo, useCallback, use, useRef, useEffect, suspense, lazy, createPortal
+4. Performance - web vital, web worker, api, images, fonts, List key
+5. Test case with example - unit, itegration, e2e
+6. bundler and devtools

@@ -55,6 +55,8 @@ const Virtualisation = () => {
             style={{
               position: "absolute",
               top: `${(startIndex + index) * ItemHeight}px`,
+              // Composite ?
+              // transform: `translateY(${(startIndex+index) * ITEM_HEIGHT}px)`,
               left: 0,
               right: 0,
               height: `${ItemHeight}px`,
@@ -75,3 +77,14 @@ const Virtualisation = () => {
 };
 
 export default Virtualisation;
+
+{/**
+ 
+ - because transforms can be handled efficiently by the browser's rendering pipeline and 
+  don't change the element's layout position in the same way top does.
+
+  - Yes. Compositing is one of the final stages of the browser rendering pipeline. 
+    Its job is to take already-painted pieces/layers and combine them in the correct 
+    order to produce the final pixels that appear on the screen.
+  
+*/}

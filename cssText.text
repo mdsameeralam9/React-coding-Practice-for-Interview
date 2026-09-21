@@ -1,0 +1,29 @@
+# Shadow
+ box-shadow: horizontal  vertical  blur  color;
+             ↓           ↓         ↓     ↓
+             0           0         10px  rgba(0,0,0,0.2)
+
+  
+ - Controls whether the shadow moves left or right.
+ - Controls whether the shadow moves up or down.
+ - Controls how soft/spread out the shadow is.
+ - rgba(red, green, blue, opacity)
+ - 0px 0px 5px rgba(0,0,0,0.2)
+
+
+
+# Position
+- static → Default position; element stays in normal document flow.
+- relative → Element stays in normal flow but can be moved from its original position.
+- absolute → Element is positioned relative to its nearest positioned parent.
+- fixed → Element stays fixed relative to the browser screen while scrolling.
+- sticky → Element behaves normally until it reaches a specified position, then sticks while scrolling.
+
+.box {
+  position: absolute;
+
+  top: 10px;      /* 10px from top */
+  right: 20px;    /* 20px from right */
+  bottom: 30px;   /* 30px from bottom */
+  left: 40px;     /* 40px from left */
+}
