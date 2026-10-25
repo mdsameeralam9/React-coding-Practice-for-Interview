@@ -9,7 +9,7 @@ const initialData = {
   done: [{ id: 4, text: "Setup Project" }],
 };
 
-export default function DragAndDropLayout() {
+export function DragAndDropLayout() {
   const [boards, setBoards] = useState(initialData);
 
   const [dragItem, setDragItem] = useState(null);

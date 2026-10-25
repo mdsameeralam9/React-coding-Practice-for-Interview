@@ -37,7 +37,7 @@
 // Day 24 - import SearchWithAPI from "./SearchWithApi/SearchWithAPI";
 // Day 25 -import EventManagement from "./EventMangement/EventMangmnt";
 
-import LoginScreen from "./Login_Approaches/LoginScreen";
+import Layout from "./Registration_UI_SW3/Layout.jsx";
 // import SIblingsLayout from "./ShareDataBetweenSiblings/SIblingsLayout";
 
 // import ApiCallWithTimeOut from "./ApiCallApproach/ApiCallWithTimeOut";
@@ -52,7 +52,7 @@ import LoginScreen from "./Login_Approaches/LoginScreen";
 
 
 const App = () => {
-  return <LoginScreen />;
+  return <Layout />;
 };
 
 export default App;

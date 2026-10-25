@@ -1,17 +1,21 @@
-import { FormEvent, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const API_BASE_URL = "http://localhost:5000/api/auth";
+const API_BASE_URL = "/api/auth";
 
 type Profile = Record<string, unknown>;
 
 type ViewState = "checking" | "login" | "profile";
 
 const getErrorMessage = (error: unknown) =>
-  error instanceof Error ? error.message : "Something went wrong. Please try again.";
+  error instanceof Error
+    ? error.message
+    : "Something went wrong. Please try again.";
 
 const getProfileLabel = (profile: Profile, key: string) => {
   const value = profile[key];
-  return typeof value === "string" || typeof value === "number" ? String(value) : null;
+  return typeof value === "string" || typeof value === "number"
+    ? String(value)
+    : null;
 };
 
 const LoginScreen = () => {
@@ -46,7 +50,7 @@ const LoginScreen = () => {
     void Promise.resolve().then(loadProfile);
   }, []);
 
-  const handleLogin = async (event: FormEvent<HTMLFormElement>) => {
+  const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setError("");
     setIsSubmitting(true);
@@ -62,9 +66,9 @@ const LoginScreen = () => {
       });
 
       if (!response.ok) {
-        const responseData = (await response.json().catch(() => null)) as
-          | { message?: string }
-          | null;
+        const responseData = (await response.json().catch(() => null)) as {
+          message?: string;
+        } | null;
         throw new Error(responseData?.message ?? "Invalid email or password.");
       }
 
@@ -142,7 +146,9 @@ const LoginScreen = () => {
                   <div key={key}>
                     <dt className="text-xs capitalize text-slate-500">{key}</dt>
                     <dd className="mt-1 break-words text-sm text-slate-200">
-                      {typeof value === "object" ? JSON.stringify(value) : String(value)}
+                      {typeof value === "object"
+                        ? JSON.stringify(value)
+                        : String(value)}
                     </dd>
                   </div>
                 ))}
@@ -175,7 +181,8 @@ const LoginScreen = () => {
             A quieter way to get started.
           </h1>
           <p className="mt-6 max-w-md text-lg leading-8 text-slate-400">
-            Sign in to continue to your profile. Your session is secured by an HttpOnly cookie.
+            Sign in to continue to your profile. Your session is secured by an
+            HttpOnly cookie.
           </p>
         </div>
 
@@ -185,11 +192,16 @@ const LoginScreen = () => {
         >
           <div className="mb-8">
             <h2 className="text-2xl font-semibold text-white">Welcome back</h2>
-            <p className="mt-2 text-sm text-slate-400">Use your account credentials to sign in.</p>
+            <p className="mt-2 text-sm text-slate-400">
+              Use your account credentials to sign in.
+            </p>
           </div>
 
           <div className="space-y-5">
-            <label className="block text-sm font-medium text-slate-300" htmlFor="email">
+            <label
+              className="block text-sm font-medium text-slate-300"
+              htmlFor="email"
+            >
               Email address
               <input
                 className="mt-2 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
@@ -203,7 +215,10 @@ const LoginScreen = () => {
               />
             </label>
 
-            <label className="block text-sm font-medium text-slate-300" htmlFor="password">
+            <label
+              className="block text-sm font-medium text-slate-300"
+              htmlFor="password"
+            >
               Password
               <input
                 className="mt-2 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
